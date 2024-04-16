@@ -13,6 +13,7 @@ end
 # rubocop:enable Bundler/DuplicatedGem
 
 gem 'pry'
+bundle add 'sidekiq'
 gem 'launchy', require: false
 
 dbs = ENV['DB_ALL'] ? 'all' : ENV.fetch('DB', 'sqlite')
